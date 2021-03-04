@@ -22,7 +22,8 @@
     "release": "npm version -m \"New version: %s\"",
     "postrelease": "npm run push && npm publish",
     "push": "git push origin master && git push origin --tags",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prepare": "npm run build"
   },
   "lint-staged": {
     "*.+(js|jsx|scss)": [
